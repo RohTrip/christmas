@@ -1,0 +1,102 @@
+h1 {
+  font-family: sans-serif;
+}
+
+/*
+
+Intro
+
+*/
+
+body {
+  background-color: #F4BFD4;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0; 
+}
+
+#intro {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: sans-serif;
+  top: 35%;
+  align-content: center;
+}
+
+#header {
+  font-size: 7vw;
+  color: #000000;
+  animation: fadeInUpBig 4s;
+  font-weight: 500;
+  width: 80%;
+}
+
+#followup {
+  margin-top: .5rem;
+  font-weight: 500;
+  font-size: 5vw;
+  color: #000000;
+  animation: fadeIn 4s forwards;
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+#emoji {
+  font-size: 25vw;
+  animation: fadeIn 4s forwards;
+  animation-delay: 6s;
+  opacity: 0;
+  margin-top: 5px;
+}
+
+  #buttonRev {
+    opacity: 0; /* Initially hidden */
+    position: fixed;
+    bottom: 3%;
+    left: 4%;
+    animation: fadeIn 3s forwards; /* Fade in the arrow */
+    animation-delay: 8s; /* After 4 seconds */
+    outline: #000000;
+    background-color: transparent;
+    border: none;
+    transform: scaleX(-1);
+  }
+
+  #button {
+    opacity: 0; /* Initially hidden */
+    position: fixed;
+    bottom: 3%;
+    right: 4%;
+    animation: fadeIn 3s forwards; /* Fade in the arrow */
+    animation-delay: 8s; /* After 4 seconds */
+    outline: #000000;
+    background-color: transparent;
+    border: none;
+  }
+  
+  
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotateSideToSide {
+    0% {
+      transform: rotate(-15deg); 
+    }
+    50% {
+      transform: rotate(15deg); 
+    }
+    100% {
+      transform: rotate(-15deg); 
+    }
+  }
